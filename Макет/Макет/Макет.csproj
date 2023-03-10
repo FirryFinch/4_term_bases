@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CF70749-5CE6-4779-97D7-4BF11A970CF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Макет</RootNamespace>
+    <AssemblyName>Макет</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClient.Designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car+Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car+Client.Designer.cs">
+      <DependentUpon>Car+Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeClient.Designer.cs">
+      <DependentUpon>ChangeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeEmployees.Designer.cs">
+      <DependentUpon>ChangeEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePart.Designer.cs">
+      <DependentUpon>ChangePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeWork.Designer.cs">
+      <DependentUpon>ChangeWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLogin.Designer.cs">
+      <DependentUpon>SystemLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemProfileAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemProfileAcc.Designer.cs">
+      <DependentUpon>SystemProfileAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemProfileAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemProfileAdmin.Designer.cs">
+      <DependentUpon>SystemProfileAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemProfileBoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemProfileBoss.Designer.cs">
+      <DependentUpon>SystemProfileBoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemProfileCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemProfileCall.Designer.cs">
+      <DependentUpon>SystemProfileCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemProfilePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemProfilePart.Designer.cs">
+      <DependentUpon>SystemProfilePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Макет_v2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Макет_v2DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car+Client.resx">
+      <DependentUpon>Car+Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeClient.resx">
+      <DependentUpon>ChangeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeEmployees.resx">
+      <DependentUpon>ChangeEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePart.resx">
+      <DependentUpon>ChangePart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeWork.resx">
+      <DependentUpon>ChangeWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SystemLogin.resx">
+      <DependentUpon>SystemLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemProfileAcc.resx">
+      <DependentUpon>SystemProfileAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemProfileAdmin.resx">
+      <DependentUpon>SystemProfileAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemProfileBoss.resx">
+      <DependentUpon>SystemProfileBoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemProfileCall.resx">
+      <DependentUpon>SystemProfileCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemProfilePart.resx">
+      <DependentUpon>SystemProfilePart.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Макет_v2DataSet.xsc">
+      <DependentUpon>Макет_v2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Макет_v2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Макет_v2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Макет_v2DataSet.xss">
+      <DependentUpon>Макет_v2DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
